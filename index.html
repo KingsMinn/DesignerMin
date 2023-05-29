@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title> Main </title>
+    </head>
+
+    <body>
+        <style>
+            @font-face {
+                font-family: 'NEXON Lv1 Gothic OTF Bold';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'NEXON Lv1 Gothic OTF';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            html {
+              border-collapse: collapse;
+              font-family: 'NEXON Lv1 Gothic OTF Bold';
+              background-color: black;
+            }
+            .title {
+                height: 200px;
+                display: block;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 60px;
+                color: white;
+            }
+            .banner {
+                position: absolute;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 20px;
+
+                top: 20px;
+                right: 30px;
+
+                text-shadow: 0 0 20px rgba(0, 0, 0, 0.519);
+            }
+            .text-gap {
+                margin: 20px;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            .full-screen {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            iframe {
+                position:absolute;
+                top:0;
+                left:-50vw;
+                width:200%;
+                height:100%;
+                z-index: -2;
+            }
+            .button {
+                font-size: 20px;
+                z-index: 1;
+
+                display: inline-block;
+                position: relative;
+                margin-top: -20px;
+
+                text-decoration: none;
+                transition: transform 0.2s ease;
+            }
+            .button:hover{
+                transform: scale(1.1);
+            }
+        </style>
+        <div style="padding:56.25% 0 0 0;">
+            <iframe src="https://player.vimeo.com/video/824643059?controls=0&h=c01d83a25f&autoplay=1&loop=1&color=38ef00&title=0&byline=0&portrait=0"
+                    frameborder="0" allow="autoplay; fullscreen;"></iframe>
+        </div><script src="https://player.vimeo.com/api/player.js"></script>
+        
+        <div class="full-screen" style="background: linear-gradient(to right, black, rgba(0, 0, 0, 0));"></div>
+        
+        <a style="color: white; position: absolute; top: 12px; left: 12px;font-family: 'NEXON Lv1 Gothic OTF'; font-size: 12px; line-height: 20px;">
+            과제 제출용 설명: 크롬 브라우저의 경우 새로고침과 동시에 화면을 여러 번 클릭해야 영상이 재생됩니다.
+            <br>
+            '더보기 >'버튼을 누르면 다른 페이지로 넘어갑니다.
+        </a>
+
+        <div class="banner">
+            <span class="text-gap"></span>
+            <a href="https://www.google.com">Main</a>
+            <span class="text-gap"></span>
+            <a>Work</a>
+            <span class="text-gap"></span>
+            <a>About</a>
+        </div>
+
+        <div style="position: absolute; transform: translateY(-50%); top: 50%; left: 50px">
+            <div class="title">
+                <p style="font-family: 'NEXON Lv1 Gothic OTF'; margin-bottom: -40px;">
+                    안녕하세요,
+                </p>
+                <p style="font-family: 'NEXON Lv1 Gothic OTF Bold';">
+                    디자이너 김승민입니다.
+                </p>
+            </div>
+
+            <div class= "button"style="background-color: #ffffff; padding: 10px 20px; border-radius: 30px;">
+                <a href="Works.html" style="color: rgb(13, 0, 255);">더보기 ></a>
+            </div>
+        </div>
+    </body>
+</html>
